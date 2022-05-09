@@ -89,4 +89,11 @@ This also shows that price might be more dependent on consumption rather than pr
 
 ## Prediction
 
-<img src=“\socialdatawebsite\dtree.png”>
+<iframe src="\socialdatawebsite\dtree.png"
+    sandbox="allow-same-origin allow-scripts"
+    width="1000px"
+    height="800px"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
