@@ -91,8 +91,8 @@ This also shows that price might be more dependent on consumption rather than pr
 
 <iframe src="\socialdatawebsite\dtree.png"
     sandbox="allow-same-origin allow-scripts"
-    width="1000px"
-    height="800px"
+    width="1130px"
+    height="1118px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
