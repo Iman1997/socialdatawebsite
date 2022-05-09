@@ -86,3 +86,14 @@ For the days of the week, we see that there is a tendency in terms of pricing to
 Talking about households, chores can be annoying during the day, so sometimes we do them while we sleep instead, and why not take advantage of the lower prices. During midnight and 5 in the morning, we see that the prices are between 120.933 DKK - 148.092 DKK. Another household chore is cooking dinner which apparently happens for many around 18 or 19 o'clock, so here the price is also higher. 
 Furthermore, around 15 o'clock, we see that there’s a suspicious dip in pricing. When looking at the energy production and consumption from earlier, there’s a relatively high difference in energy production versus the amount of consumption, as there’s more than 1000MW produced than consumed. In order to balance things out, as the exporting of energy is expensive, one might think that the prices are lowered which encourages higher consumption.
 This also shows that price might be more dependent on consumption rather than production.
+
+## Prediction
+
+<iframe src="\socialdatawebsite\dtree.png"
+    sandbox="allow-same-origin allow-scripts"
+    width="700px"
+    height="700px"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
