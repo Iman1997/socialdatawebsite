@@ -87,7 +87,28 @@ Talking about households, chores can be annoying during the day, so sometimes we
 Furthermore, around 15 o'clock, we see that there’s a suspicious dip in pricing. When looking at the energy production and consumption from earlier, there’s a relatively high difference in energy production versus the amount of consumption, as there’s more than 1000MW produced than consumed. In order to balance things out, as the exporting of energy is expensive, one might think that the prices are lowered which encourages higher consumption.
 This also shows that price might be more dependent on consumption rather than production.
 
+<iframe src="\socialdatawebsite\correlation_all.png"
+    sandbox="allow-same-origin allow-scripts"
+    width="1130px"
+    height="1118px"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+We draw a scatter plot between production, consumption, and price. Calculate the Pearson correlation coefficient and corresponding P-value. A linear regression analysis was performed and the regression line was drawn on the graph.
+Since energy production is demand-based, and energy imports and exports usually account for a small portion, The conclusion of the first graph can be easily understood: a very strong positive correlation between energy production and consumption, with a regression line slope almost equal to 1.
+The relationship between price and production(consumption) is an interesting conclusion: the more energy is produced (or consumed), the higher the price tends to be. This conclusion is drawn because we found that the slopes of the two regression lines are positive, and the P-values obtained by calculating the Pearson correlation coefficients are 6.9E-284 and 5.9E-310, which are far less than 0.05, which means that the price and production (consumption) was significantly correlated.
+
+We explore the relationship between energy production, consumption and price through scatter plots, regression lines and correlation coefficients: production and consumption are strongly correlated, and the slope of the regression line is close to 1. There is also a significant positive correlation between price and the first two: the more energy is produced and consumed, the higher the price of energy is.
+
 ## Prediction
+
+Now comes the part of prediction. First, we divide all hours into two categories according to the price of energy and the proportion of green energy: the time that is suitable for purchasing energy, which is a “good” time, and the time that is not suitable for purchasing energy, which is a “bad” time. Here, we define an hour when the price is less than 300 DKK per MWh and the proportion of green energy is greater than 60% as “good”, and vice versa.
+ 
+The data in 2020 is randomly divided into a training set and a testing set according to the ratio of 7:3. We hope to judge whether it is suitable to buy energy only using the information of time. According to the bar plots, we extract three characteristics from each specific time: month of the year, day of the week and hour of the day.
+ 
+With these three features as independent variables and “good”/”bad” as dependent variables, the decision tree is constructed as follows.
 
 <iframe src="\socialdatawebsite\dtree.png"
     sandbox="allow-same-origin allow-scripts"
@@ -97,3 +118,56 @@ This also shows that price might be more dependent on consumption rather than pr
     seamless="seamless"
     frameborder="0">
 </iframe>
+
+Following table compares the performance metrixs of the decision tree and that of the baseline. The decision tree presents a significant performance boost in accuracy, precision and recall.
+
+
+A confusion matrix can show the performance more intuitively. In the decision tree, “good” time is marked as positive and “bad” time are marked as negative. Compared with the false-positive rate and false-negative rate, the true-positive rate and true-negative rate have larger values, which means the decision tree has a better performance. In addition, the decision tree performed better on samples that are actually positive than on samples that are actually negative.
+
+<iframe src="\socialdatawebsite\cf.png"
+    sandbox="allow-same-origin allow-scripts"
+    width="1130px"
+    height="1118px"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+Plotting the feature importance, we can draw the conclusion that the month of the year is the most important factor affecting the suitability of purchasing energy, followed by the day of the week. This reminds us that it is important to plan energy purchases on an annual basis.
+
+<iframe src="\socialdatawebsite\fi.png"
+    sandbox="allow-same-origin allow-scripts"
+    width="1130px"
+    height="1118px"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+Plot the ROC curve as follows. The orange solid line is the ROC curve, and the blue dotted line is the baseline line for comparison, which is the curve in the case of completely random judgment (false-positive rate equals to true-positive rate). There is a significant gap between the two curves, indicating that the improvement brought by our decision tree is obvious.
+In practical problems, true-positive rate and false-negative rate are of different importance. If we want to grab as many good times as possible to buy energy, we want the true-positive rate to be larger, i.e. more towards the upper-right corner of the image. If we care about not buying energy at bad times as much as possible, then we want the false-negative rate to be smaller, i.e. more towards the lower-left corner of the image.
+
+<iframe src="\socialdatawebsite\roc.png"
+    sandbox="allow-same-origin allow-scripts"
+    width="1130px"
+    height="1118px"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+Following is the Precision-Recall curve. In the decision tree, different thresholds can be selected, and each selection leads to different precision and recall.  The precision and recall corresponding to each specific threshold are marked as a point in the image, and the Precision-Recall curve connects these points together. The overall curve is down, but there are also partial upswings.
+In practical, if we want to find a balance point, i.e. Precision = Recall, then precision and recall are both around 0.7, which is a relatively good performance in the general sense.
+
+<iframe src="\socialdatawebsite\prc.png"
+    sandbox="allow-same-origin allow-scripts"
+    width="1130px"
+    height="1118px"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+Three factors are extracted from the time data, and a decision tree is constructed to judge whether an hour is a good time to buy energy. Compared with the baseline, the improvement brought by our decision tree is obvious, and its performance on positive samples is better than that on negative samples. According to feature importance, planning energy purchase in the dimension of year is important. If it is clear what we care about in the actual problems, then the ROC curve and Precision-Recall curve can provide more reference for decision-making, especially the selection of thresholds.
+
+## Conclusion
