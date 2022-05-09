@@ -121,6 +121,11 @@ With these three features as independent variables and “good”/”bad” as d
 
 Following table compares the performance metrixs of the decision tree and that of the baseline. The decision tree presents a significant performance boost in accuracy, precision and recall.
 
+|             | Baseline    | Decision Tree |
+| ----------- | ----------- | ------------- |
+| Accuracy    | 0.52        | 0.66          |
+| Precision   | 0.59        | 0.67          |
+| Recall      | 0.54        | 0.73          |
 
 A confusion matrix can show the performance more intuitively. In the decision tree, “good” time is marked as positive and “bad” time are marked as negative. Compared with the false-positive rate and false-negative rate, the true-positive rate and true-negative rate have larger values, which means the decision tree has a better performance. In addition, the decision tree performed better on samples that are actually positive than on samples that are actually negative.
 
