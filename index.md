@@ -8,8 +8,8 @@
 
 <iframe src="\socialdatawebsite\cons_final.html"
     sandbox="allow-same-origin allow-scripts"
-    width="600px"
-    height="600px"
+    width="700px"
+    height="700px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -43,8 +43,8 @@ Now looking at the choropleth map mode showing the green fraction of the total p
 
 <iframe src="\socialdatawebsite\production_final.html"
     sandbox="allow-same-origin allow-scripts"
-    width="600px"
-    height="600px"
+    width="700px"
+    height="700px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -72,8 +72,8 @@ Finally, the size of a municipality e.i. Samsø or Læsø, as well as the strang
 
 <iframe src="\socialdatawebsite\price_final.html"
     sandbox="allow-same-origin allow-scripts"
-    width="600px"
-    height="600px"
+    width="700px"
+    height="700px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
