@@ -1,3 +1,5 @@
 theme: jekyll-theme-cayman
-[markup.goldmark.renderer]
-  unsafe = true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
