@@ -51,7 +51,7 @@ Now looking at the choropleth map mode showing the green fraction of the total p
 </iframe>
 
 On the chart(s) above, we see the average energy production once again on a monthly, daily, and hourly basis. The production of energy seems to follow the energy consumption on average, but we produce more than we consume which makes sense since we can’t use what we don’t have. Also in regards to electricity, it’s an issue to overproduce as it would be hard to manage the excess electricity as it would have to be exported. 
-What’s interesting to look at on these charts are the differences between green energy production (consisting of off & on-shore wind power and solar power) and  “general” energy production (green energy plus production less than 100MW & production greater than or equal 100MW). For the monthly production, we see that the green energy production is higher during January and February in comparison to any other month. One could assume that this is the wind power that is more dominant, as the wind is more present during these colder months. The same for solar power where there is a rise during the sunny July. For daily and hourly green vs “general” production, we see that there’s a common tendency for green energy to fill around half of the total energy production. This might excite politicians as they had a goal stating that green energy should amount to at least 30% of the total energy consumption/production in 2020. 
+What’s interesting to look at on these charts are the differences between green energy production (consisting of off & on-shore wind power and solar power) and  “general” energy production (green energy plus production less than 100MW & production greater than or equal 100MW). For the monthly production, we see that the green energy production is higher during January and February in comparison to any other month. One could assume that this is the wind power that is more dominant, as the wind is more present during these colder months. The same for solar power where there is a rise during the sunny July. For daily and hourly green vs “general” production, we see that there’s a common tendency for green energy to fill around half of the total energy production. This might excite politicians as they had a goal stating that green energy should amount to at least 30% of the total energy consumption/production in 2020 [source](https://kefm.dk/media/6788/regeringens_energi_og_klimapolitiske_maal.pdf). 
 
 <iframe src="\socialdatawebsite\production_map.html"
     sandbox="allow-same-origin allow-scripts"
@@ -89,11 +89,4 @@ This also shows that price might be more dependent on consumption rather than pr
 
 ## Prediction
 
-<iframe src="\socialdatawebsite\dtree.png"
-    sandbox="allow-same-origin allow-scripts"
-    width="700px"
-    height="700px"
-    scrolling="no"
-    seamless="seamless"
-    frameborder="0">
-</iframe>
+<img src=“\socialdatawebsite\dtree.png”>
