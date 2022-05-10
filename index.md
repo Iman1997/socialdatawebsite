@@ -148,7 +148,7 @@ With these three features as independent variables and “good”/”bad” as d
     sandbox="allow-same-origin allow-scripts"
     width="1400px"
     height="1440px"
-    scrolling="no"
+    scrolling="yes"
     seamless="seamless"
     frameborder="0">
 </iframe>
