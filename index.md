@@ -1,12 +1,12 @@
-## Social Data Final Project
 
 [editor on GitHub](https://github.com/Iman1997/socialdatawebsite/edit/gh-pages/index.md)
 
 ## Introduction
 
 ## Consumption
-In the plot below we see the average consumption of energy presented on a monthly, daily, and hourly basis.
 
+In the plot below we see the average consumption of energy presented on a monthly, daily, and hourly basis.
+```
 <p align="center">
 <iframe src="\socialdatawebsite\consumption_bar.html"
     sandbox="allow-same-origin allow-scripts"
@@ -17,7 +17,7 @@ In the plot below we see the average consumption of energy presented on a monthl
     frameborder="0">
 </iframe>
 </p>
-
+```
 For the average monthly energy consumption, we see that the individuals consume more energy in the colder months with Santa’s month (December to be clear) being the highest at 4033,07 MWh/h, and less in the warmer months when the national blueberry month (aka. July) is the lowest at 3016,42 MWh/h. While heat doesn't come only from energy production, this makes sense as we in Denmark experience winters lower than 0°C, and despite being vikings, we need a little more energy to warm us up, and vice versa for the warmer months where we need less. Furthermore, the sun sets earlier during the winter months so we would need more light which inevitably increases the energy consumption.
 
 Now, looking at the daily average energy consumption, with the exception of Sunday, we seem to consume more during the beginning of the week and less at the end. A key assumption is that companies, who are major energy consumers, are usually not running during the weekend and there’s therefore a decrease during these days. 
@@ -156,13 +156,11 @@ With these three features as independent variables and “good”/”bad” as d
 
 Following table compares the performance metrixs of the decision tree and that of the baseline. The decision tree presents a significant performance boost in accuracy, precision and recall.
 
-<div align="center">
 |             | Baseline    | Decision Tree |
 | ----------- | ----------- | ------------- |
 | Accuracy    | 0.52        | 0.66          |
 | Precision   | 0.59        | 0.67          |
 | Recall      | 0.54        | 0.73          |
-</div>
 
 A confusion matrix can show the performance more intuitively. In the decision tree, “good” time is marked as positive and “bad” time are marked as negative. Compared with the false-positive rate and false-negative rate, the true-positive rate and true-negative rate have larger values, which means the decision tree has a better performance. In addition, the decision tree performed better on samples that are actually positive than on samples that are actually negative.
 
