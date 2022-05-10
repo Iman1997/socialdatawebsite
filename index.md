@@ -1,3 +1,4 @@
+# Social Data Final Project
 
 [editor on GitHub](https://github.com/Iman1997/socialdatawebsite/edit/gh-pages/index.md)
 
@@ -26,7 +27,7 @@ For the hourly energy consumption, a sensible pattern is seen as we consume more
 <p align="center"> 
 <iframe src="\socialdatawebsite\consumption_map.html"
     sandbox="allow-same-origin allow-scripts"
-    width="\textwidth"
+    width="1000px"
     height="800px"
     scrolling="no"
     seamless="seamless"
