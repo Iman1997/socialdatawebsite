@@ -5,6 +5,7 @@
 ## Introduction
 
 ## Consumption
+In the plot below we see the average consumption of energy presented on a monthly, daily, and hourly basis.
 
 <iframe src="\socialdatawebsite\consumption_bar.html"
     sandbox="allow-same-origin allow-scripts"
@@ -14,8 +15,6 @@
     seamless="seamless"
     frameborder="0">
 </iframe>
-
-In the plot above we see the average consumption of energy presented on a monthly, daily, and hourly basis.
 
 For the average monthly energy consumption, we see that the individuals consume more energy in the colder months with Santa’s month (December to be clear) being the highest at 4033,07 MWh/h, and less in the warmer months when the national blueberry month (aka. July) is the lowest at 3016,42 MWh/h. While heat doesn't come only from energy production, this makes sense as we in Denmark experience winters lower than 0°C, and despite being vikings, we need a little more energy to warm us up, and vice versa for the warmer months where we need less. Furthermore, the sun sets earlier during the winter months so we would need more light which inevitably increases the energy consumption.
 
@@ -89,8 +88,8 @@ This also shows that price might be more dependent on consumption rather than pr
 
 <iframe src="\socialdatawebsite\cor1.html"
     sandbox="allow-same-origin allow-scripts"
-    width="700px"
-    height="700px"
+    width="450px"
+    height="300px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -98,8 +97,8 @@ This also shows that price might be more dependent on consumption rather than pr
 
 <iframe src="\socialdatawebsite\cor2.html"
     sandbox="allow-same-origin allow-scripts"
-    width="700px"
-    height="700px"
+    width="450px"
+    height="300px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -107,8 +106,8 @@ This also shows that price might be more dependent on consumption rather than pr
 
 <iframe src="\socialdatawebsite\cor3.html"
     sandbox="allow-same-origin allow-scripts"
-    width="700px"
-    height="700px"
+    width="450px"
+    height="300px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -130,8 +129,8 @@ With these three features as independent variables and “good”/”bad” as d
 
 <iframe src="\socialdatawebsite\tree.html"
     sandbox="allow-same-origin allow-scripts"
-    width="1130px"
-    height="1118px"
+    width="1400px"
+    height="1440px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
