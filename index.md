@@ -11,7 +11,7 @@ In the plot below we see the average consumption of energy presented on a monthl
 <iframe src="\socialdatawebsite\consumption_bar.html"
     sandbox="allow-same-origin allow-scripts"
     width="700px"
-    height="700px"
+    height="700px"    
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -146,8 +146,8 @@ With these three features as independent variables and “good”/”bad” as d
 <p align="center">
 <iframe src="\socialdatawebsite\tree.html"
     sandbox="allow-same-origin allow-scripts"
-    width="1400px"
-    height="1440px"
+    width="1000px"
+    height="800px"
     scrolling="yes"
     seamless="seamless"
     frameborder="0">
