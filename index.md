@@ -87,10 +87,28 @@ Talking about households, chores can be annoying during the day, so sometimes we
 Furthermore, around 15 o'clock, we see that there’s a suspicious dip in pricing. When looking at the energy production and consumption from earlier, there’s a relatively high difference in energy production versus the amount of consumption, as there’s more than 1000MW produced than consumed. In order to balance things out, as the exporting of energy is expensive, one might think that the prices are lowered which encourages higher consumption.
 This also shows that price might be more dependent on consumption rather than production.
 
-<iframe src="\socialdatawebsite\correlation_all.png"
+<iframe src="\socialdatawebsite\cor1.html"
     sandbox="allow-same-origin allow-scripts"
-    width="1130px"
-    height="1118px"
+    width="700px"
+    height="700px"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+<iframe src="\socialdatawebsite\cor2.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="700px"
+    height="700px"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+<iframe src="\socialdatawebsite\cor3.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="700px"
+    height="700px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -110,7 +128,7 @@ The data in 2020 is randomly divided into a training set and a testing set accor
  
 With these three features as independent variables and “good”/”bad” as dependent variables, the decision tree is constructed as follows.
 
-<iframe src="\socialdatawebsite\dtree.png"
+<iframe src="\socialdatawebsite\tree.html"
     sandbox="allow-same-origin allow-scripts"
     width="1130px"
     height="1118px"
@@ -129,7 +147,7 @@ Following table compares the performance metrixs of the decision tree and that o
 
 A confusion matrix can show the performance more intuitively. In the decision tree, “good” time is marked as positive and “bad” time are marked as negative. Compared with the false-positive rate and false-negative rate, the true-positive rate and true-negative rate have larger values, which means the decision tree has a better performance. In addition, the decision tree performed better on samples that are actually positive than on samples that are actually negative.
 
-<iframe src="\socialdatawebsite\cf.png"
+<iframe src="\socialdatawebsite\metrix.html"
     sandbox="allow-same-origin allow-scripts"
     width="1130px"
     height="1118px"
@@ -140,7 +158,7 @@ A confusion matrix can show the performance more intuitively. In the decision tr
 
 Plotting the feature importance, we can draw the conclusion that the month of the year is the most important factor affecting the suitability of purchasing energy, followed by the day of the week. This reminds us that it is important to plan energy purchases on an annual basis.
 
-<iframe src="\socialdatawebsite\fi.png"
+<iframe src="\socialdatawebsite\importance.html"
     sandbox="allow-same-origin allow-scripts"
     width="1130px"
     height="1118px"
@@ -152,7 +170,7 @@ Plotting the feature importance, we can draw the conclusion that the month of th
 Plot the ROC curve as follows. The orange solid line is the ROC curve, and the blue dotted line is the baseline line for comparison, which is the curve in the case of completely random judgment (false-positive rate equals to true-positive rate). There is a significant gap between the two curves, indicating that the improvement brought by our decision tree is obvious.
 In practical problems, true-positive rate and false-negative rate are of different importance. If we want to grab as many good times as possible to buy energy, we want the true-positive rate to be larger, i.e. more towards the upper-right corner of the image. If we care about not buying energy at bad times as much as possible, then we want the false-negative rate to be smaller, i.e. more towards the lower-left corner of the image.
 
-<iframe src="\socialdatawebsite\roc.png"
+<iframe src="\socialdatawebsite\ROC.html"
     sandbox="allow-same-origin allow-scripts"
     width="1130px"
     height="1118px"
@@ -164,7 +182,7 @@ In practical problems, true-positive rate and false-negative rate are of differe
 Following is the Precision-Recall curve. In the decision tree, different thresholds can be selected, and each selection leads to different precision and recall.  The precision and recall corresponding to each specific threshold are marked as a point in the image, and the Precision-Recall curve connects these points together. The overall curve is down, but there are also partial upswings.
 In practical, if we want to find a balance point, i.e. Precision = Recall, then precision and recall are both around 0.7, which is a relatively good performance in the general sense.
 
-<iframe src="\socialdatawebsite\prc.png"
+<iframe src="\socialdatawebsite\PR.html"
     sandbox="allow-same-origin allow-scripts"
     width="1130px"
     height="1118px"
