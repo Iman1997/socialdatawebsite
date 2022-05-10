@@ -148,7 +148,6 @@ With these three features as independent variables and “good”/”bad” as d
     sandbox="allow-same-origin allow-scripts"
     width="1400px"
     height="1440px"
-    style="width: 50%;"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
