@@ -156,21 +156,21 @@ With these three features as independent variables and “good”/”bad” as d
 
 Following table compares the performance metrixs of the decision tree and that of the baseline. The decision tree presents a significant performance boost in accuracy, precision and recall.
 
-<center>
+<div align="center">
 |             | Baseline    | Decision Tree |
 | ----------- | ----------- | ------------- |
 | Accuracy    | 0.52        | 0.66          |
 | Precision   | 0.59        | 0.67          |
 | Recall      | 0.54        | 0.73          |
-</center>
+</div>
 
 A confusion matrix can show the performance more intuitively. In the decision tree, “good” time is marked as positive and “bad” time are marked as negative. Compared with the false-positive rate and false-negative rate, the true-positive rate and true-negative rate have larger values, which means the decision tree has a better performance. In addition, the decision tree performed better on samples that are actually positive than on samples that are actually negative.
 
 <p align="center">
 <iframe src="\socialdatawebsite\metrix.html"
     sandbox="allow-same-origin allow-scripts"
-    width="1130px"
-    height="1118px"
+    width="450px"
+    height="300px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -182,8 +182,8 @@ Plotting the feature importance, we can draw the conclusion that the month of th
 <p align="center">
 <iframe src="\socialdatawebsite\importance.html"
     sandbox="allow-same-origin allow-scripts"
-    width="1130px"
-    height="1118px"
+    width="450px"
+    height="300px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -196,8 +196,8 @@ In practical problems, true-positive rate and false-negative rate are of differe
 <p align="center">
 <iframe src="\socialdatawebsite\ROC.html"
     sandbox="allow-same-origin allow-scripts"
-    width="1130px"
-    height="1118px"
+    width="450px"
+    height="300px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
@@ -210,8 +210,8 @@ In practical, if we want to find a balance point, i.e. Precision = Recall, then 
 <p align="center">
 <iframe src="\socialdatawebsite\PR.html"
     sandbox="allow-same-origin allow-scripts"
-    width="1130px"
-    height="1118px"
+    width="450px"
+    height="300px"
     scrolling="no"
     seamless="seamless"
     frameborder="0">
