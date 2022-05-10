@@ -1,6 +1,6 @@
 # Social Data Final Project
 
-[editor on GitHub](https://github.com/Iman1997/socialdatawebsite/edit/gh-pages/index.md)
+[Link for the Explainer Notebook repository incl. the data files](https://github.com/vonScholten/social-data-project.git)
 
 ## Introduction
 
