@@ -7,6 +7,7 @@
 ## Consumption
 In the plot below we see the average consumption of energy presented on a monthly, daily, and hourly basis.
 
+<p align="center">
 <iframe src="\socialdatawebsite\consumption_bar.html"
     sandbox="allow-same-origin allow-scripts"
     width="700px"
@@ -15,6 +16,22 @@ In the plot below we see the average consumption of energy presented on a monthl
     seamless="seamless"
     frameborder="0">
 </iframe>
+</p>
+
+
+<iframe src="\socialdatawebsite\consumption_bar.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="700px"
+    height="700px"
+    align="center"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+
+
+
 
 For the average monthly energy consumption, we see that the individuals consume more energy in the colder months with Santa’s month (December to be clear) being the highest at 4033,07 MWh/h, and less in the warmer months when the national blueberry month (aka. July) is the lowest at 3016,42 MWh/h. While heat doesn't come only from energy production, this makes sense as we in Denmark experience winters lower than 0°C, and despite being vikings, we need a little more energy to warm us up, and vice versa for the warmer months where we need less. Furthermore, the sun sets earlier during the winter months so we would need more light which inevitably increases the energy consumption.
 
