@@ -5,7 +5,9 @@
 
 ## Consumption
 
+<div style="text-align: justify"> 
 In the plot below we see the average consumption of energy presented on a monthly, daily, and hourly basis.
+</div>
 
 <p align="center">
 <iframe src="\socialdatawebsite\consumption_bar.html"
@@ -18,10 +20,12 @@ In the plot below we see the average consumption of energy presented on a monthl
 </iframe>
 </p>
 
+<div style="text-align: justify"> 
 For the average monthly energy consumption, we see that the individuals consume more energy in the colder months with Santa’s month (December to be clear) being the highest at 4033,07 MWh/h, and less in the warmer months when the national blueberry month (aka. July) is the lowest at 3016,42 MWh/h. While heat doesn't come only from energy production, this makes sense as we in Denmark experience winters lower than 0°C, and despite being vikings, we need a little more energy to warm us up, and vice versa for the warmer months where we need less. Furthermore, the sun sets earlier during the winter months so we would need more light which inevitably increases the energy consumption.
 
 Now, looking at the daily average energy consumption, with the exception of Sunday, we seem to consume more during the beginning of the week and less at the end. A key assumption is that companies, who are major energy consumers, are usually not running during the weekend and there’s therefore a decrease during these days. 
-For the hourly energy consumption, a sensible pattern is seen as we consume more energy during waking hours and less when we sleep (unless you have a [curious furry baby](https://www.youtube.com/watch?v=9p6X9sEwRT4)). Around 6-7 o'clock in the morning, when most individuals wake up to start their day, the energy consumption rises until around midnight when you sleep again. This aligns with working versus free hours where we consume more during work hours (8-18). 
+For the hourly energy consumption, a sensible pattern is seen as we consume more energy during waking hours and less when we sleep (unless you have a [curious furry baby](https://www.youtube.com/watch?v=9p6X9sEwRT4)). Around 6-7 o'clock in the morning, when most individuals wake up to start their day, the energy consumption rises until around midnight when you sleep again. This aligns with working versus free hours where we consume more during work hours (8-18).
+</div> 
 
 <p align="center"> 
 <iframe src="\socialdatawebsite\consumption_map.html"
