@@ -5,7 +5,6 @@
 
 ## Consumption
 
-<html style="text-align: justify"> 
 In the plot below we see the average consumption of energy presented on a monthly, daily, and hourly basis.
 
 <p align="center">
@@ -27,7 +26,7 @@ For the hourly energy consumption, a sensible pattern is seen as we consume more
 <p align="center"> 
 <iframe src="\socialdatawebsite\consumption_map.html"
     sandbox="allow-same-origin allow-scripts"
-    width="1000px"
+    width="\textwidth"
     height="800px"
     scrolling="no"
     seamless="seamless"
@@ -220,5 +219,4 @@ In practical, if we want to find a balance point, i.e. Precision = Recall, then 
 Three factors are extracted from the time data, and a decision tree is constructed to judge whether an hour is a good time to buy energy. Compared with the baseline, the improvement brought by our decision tree is obvious, and its performance on positive samples is better than that on negative samples. According to feature importance, planning energy purchase in the dimension of year is important. If it is clear what we care about in the actual problems, then the ROC curve and Precision-Recall curve can provide more reference for decision-making, especially the selection of thresholds.
 
 ## Conclusion
-    
- </html> 
+  
