@@ -1,6 +1,7 @@
 # Social Data Final Project
 
-[Link for the Explainer Notebook repository incl. the data files](https://github.com/vonScholten/social-data-project.git)
+[Link for the Explainer Notebook repository](https://github.com/vonScholten/social-data-project.git)
+[Link for the data files](https://github.com/vonScholten/social-data-project/tree/main/data)
 
 ## Introduction
 
