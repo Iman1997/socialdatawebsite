@@ -6,7 +6,7 @@
 
 ## Consumption
 
-<iframe src="\socialdatawebsite\cons_final.html"
+<iframe src="\socialdatawebsite\consumption_bar.html"
     sandbox="allow-same-origin allow-scripts"
     width="700px"
     height="700px"
@@ -41,7 +41,7 @@ Now looking at the choropleth map mode showing the green fraction of the total p
 
 ## Production
 
-<iframe src="\socialdatawebsite\production_final.html"
+<iframe src="\socialdatawebsite\production_bar.html"
     sandbox="allow-same-origin allow-scripts"
     width="700px"
     height="700px"
@@ -70,7 +70,7 @@ Finally, the size of a municipality e.i. Samsø or Læsø, as well as the strang
 
 ## Price
 
-<iframe src="\socialdatawebsite\price_final.html"
+<iframe src="\socialdatawebsite\price_bar.html"
     sandbox="allow-same-origin allow-scripts"
     width="700px"
     height="700px"
